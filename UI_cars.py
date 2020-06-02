@@ -20,6 +20,7 @@ maxi = data.loc[0]
 data = data.loc[1:]
 
 front = data.loc[nds(data.values * maxi.values)[0][2]].reset_index(drop=True)
+print(len(front))
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.FLATLY])
 

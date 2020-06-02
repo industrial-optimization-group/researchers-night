@@ -1,0 +1,4 @@
+make,fuel-type,aspiration,num-of-doors,body-style,drive-wheels,engine-location,wheel-base,length,width,height,curb-weight,engine-type,num-of-cylinders,engine-size,fuel-system,bore,stroke,compression-ratio,horsepower,peak-rpm,city-mpg,highway-mpg,price
+Make,Fuel,Aspiration,Doors,Body,Drive,Engine-location,Wheel Base,Length,Width,Height,Weight,Engine,Cylinders,Engine Size,Fuel,Bore,Stroke,Compression Ratio,Horsepower,RPM,City-mpg,Highway-mpg,Price
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-1,-1,-1,-1,-1,1
+1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
