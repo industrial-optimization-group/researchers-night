@@ -151,11 +151,14 @@ app.layout = html.Div(
                                 ]
                             ),
                         ],
+                        style={"maxHeight": "810px", "overflow": "scroll"},
                     ),
-                    width=2,
+                    width={"size": 3, "offset": 1},
+                    className="ml-4 mr-4",
                 ),
                 dbc.Col(
-                    children=dcc.Graph(id="graph", style={"height": "720px"}), width=9,
+                    children=dcc.Graph(id="graph", style={"height": "810px"}),
+                    width={"size": 7, "offset": 1},
                 ),
             ]
         ),

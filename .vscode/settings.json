@@ -1,7 +1,7 @@
 {
-    "python.pythonPath": "/home/rishi/.virtualenvs/researchers_night/bin/python",
+    "python.pythonPath": "C:\\Projects\\.virtualenvs\\researchersnight\\Scripts\\python.exe",
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "files.autoSave": "off",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black"
 }

@@ -1,0 +1,10 @@
+brand,model,network_technology,OS,dual_sim,internal_memory,RAM,camera_resolution_rear,headphone_jack,price
+Huawei,P Smart,4G,Android 9.0 Pie,Yes,64,3,13,Yes,149
+Apple,iPhone 11,4G,IOS 13,Yes,64,4,12,No,699
+Samsung,Galaxy A20e,4G,Android 9.0 Pie,Yes,32,3,13,Yes,139
+Apple,iPhone SE,4G,IOS 13,Yes,64,2,12,No,469
+Samsung,Galaxy A51,4G,Android 10,Yes,128,4,48,Yes,299
+Samsung,Galaxy A41,4G,Android 10,Yes,64,6,48,Yes,249
+OnePlus,Nord,5G,Android 10,Yes,128,8,48,No,399
+Samsung,Galaxy A71,4G,Android 10,Yes,128,6,64,Yes,399
+Nokia,5.3,4G,Android 10,Yes,64,3,13,Yes,149
