@@ -1,4 +1,4 @@
 brand,model,network_technology,OS,dual_sim,internal_memory,RAM,camera_resolution_rear,headphone_jack,price
 Brand,Model,Network,OS,Dual SIM,Memory,RAM,Camera (MP),Headphone Jack,Price (Euros)
 0,0,0,0,0,-1,-1,-1,0,1
-1,1,0,0,0,0,1,1,0,1
+1,1,1,0,0,1,1,1,0,1

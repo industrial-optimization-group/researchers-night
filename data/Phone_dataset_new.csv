@@ -1,0 +1,26 @@
+brand,model,network_technology,OS,dual_sim,internal_memory,RAM,camera_resolution_rear,headphone_jack,price
+Huawei,P Smart,4G,Android 9.0 Pie,Yes,64,3,13,Yes,149
+Apple,iPhone 11,4G,IOS 13,Yes,64,4,12,No,699
+Samsung,Galaxy A20e,4G,Android 9.0 Pie,Yes,32,3,13,Yes,139
+Apple,iPhone SE,4G,IOS 13,Yes,64,2,12,No,469
+Samsung,Galaxy A51,4G,Android 10,Yes,128,4,48,Yes,299
+Samsung,Galaxy A41,4G,Android 10,Yes,64,6,48,Yes,249
+OnePlus,Nord,5G,Android 10,Yes,128,8,48,No,399
+Samsung,Galaxy A71,4G,Android 10,Yes,128,6,64,Yes,399
+Nokia,5.3,4G,Android 10,Yes,64,3,13,Yes,149
+Motorola,Moto G8 Power,4G,Android 10,Yes,64,4,16,Yes,249
+Huawei,P30 Lite,4G,Android 9.0 Pie,Yes,128,4,48,Yes,199
+Samsung,Galaxy S20 FE,5G,Android 10,Yes,128,6,32,No,779
+Honor,9X,4G,Android 9.0 Pie,Yes,128,4,128,Yes,249
+Samsung,Galaxy S10 Plus,4G,Android 9.0 Pie,Yes,128,8,12,Yes,599
+Sony,Xperia 10 II,4G,Android 10,Yes,128,4,12,Yes,369
+OnePlus,8 Pro,5G,Android 10,Yes,256,12,48,No,999
+Samsung,Galaxy S20 Plus,5G,Android 10,Yes,128,12,64,No,1099
+Asus,ROG Phone 3,5G,Android 10,Yes,256,8,64,Yes,829
+Motorola,Moto G9 Play,4G,Android 10,Yes,64,4,48,Yes,199
+Samsung,Galaxy Note 20 Ultra,5G,Android 10,Yes,256,12,108,No,1349
+Motorola,Moto G8,4G,Android 10,Yes,64,4,16,Yes,199
+Nokia,8.3,5G,Android 10,Yes,128,8,64,Yes,649
+Xiaomi,Mi Note 10 Lite,4G,Android 10,Yes,128,6,64,Yes,349
+Huawei,Y5p,4G,Android 10,Yes,32,2,8,Yes,99
+Huawei,Nova 5T,4G,Android 9.0 Pie,Yes,128,6,48,No,299

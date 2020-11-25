@@ -12,6 +12,7 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 from pygmo import fast_non_dominated_sorting as nds
+from sklearn import preprocessing
 
 
 data = pd.read_csv("./data/Phone_dataset.csv", header=0)
@@ -50,7 +51,8 @@ app.layout = html.Div(
             [
                 dbc.Col(
                     html.H1(
-                        children="What is your optimal phone?", className="text-center"
+                        children="What is your optimal phone?",
+                        className="text-center mt-4",
                     )
                 )
             ]
@@ -162,11 +164,11 @@ app.layout = html.Div(
                                             dcc.Checklist(
                                                 id=f"checklist-{attr}",
                                                 options=[
-                                                    {"label": f" {val}", "value": val}
+                                                    {"label": f" {val}  ", "value": val}
                                                     for val in front[attr].unique()
                                                 ],
                                                 value=front[attr].unique(),
-                                                labelStyle={"display": "block"},
+                                                labelStyle={"display": "inline-block"},
                                             ),
                                         ],
                                         className="mr-3 ml-3 mb-2 mt-2",
@@ -182,7 +184,8 @@ app.layout = html.Div(
                 ),
                 dbc.Col(
                     children=dcc.Graph(id="graph", style={"height": "810px"}),
-                    width={"size": 7, "offset": 1},
+                    width={"size": 7, "offset": 0},
+                    className="ml-5",
                 ),
             ]
         ),
@@ -211,8 +214,12 @@ def create_figure(chosen_attrs, clear_brush, *userchoice):
         data_to_plot = data_to_plot[data_to_plot[attr] <= attrmax]
     for (classes, attr) in zip(non_numeric_choices, other_cols):
         data_to_plot = data_to_plot[data_to_plot[attr].isin(classes)]
-    fig = ex.scatter_matrix(
+    """fig = ex.scatter_matrix(
         data_to_plot, dimensions=chosen_attrs, hover_data=details_on_card
+    )"""
+    """fig = spider_chart(data_to_plot, chosen_attrs)"""
+    fig = ex.parallel_coordinates(
+        data_to_plot, dimensions=chosen_attrs, color=chosen_attrs[0]
     )
     return fig
 
@@ -250,6 +257,17 @@ def bar(selectedData, fig):
     fig.update_yaxes(range=[0, front.max().max()])
     return fig
 """
+
+
+def spider_chart(data_to_plot, chosen_attrs):
+    x = data_to_plot.values  # returns a numpy array
+    min_max_scaler = preprocessing.MinMaxScaler()
+    x_scaled = min_max_scaler.fit_transform(x)
+    fig = go.Figure()
+    for sample in x_scaled:
+        fig.add_trace(go.Scatterpolar(r=sample, theta=chosen_attrs, fill="toself"))
+    return fig
+
 
 if __name__ == "__main__":
     app.run_server(debug=True)
