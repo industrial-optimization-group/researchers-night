@@ -74,14 +74,6 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 version = "7.1.2"
 
 [[package]]
-category = "main"
-description = "Extended pickling support for Python objects"
-name = "cloudpickle"
-optional = false
-python-versions = ">=3.5"
-version = "1.6.0"
-
-[[package]]
 category = "dev"
 description = "Cross-platform colored terminal text."
 marker = "sys_platform == \"win32\""
@@ -320,18 +312,6 @@ retrying = ">=1.3.3"
 six = "*"
 
 [[package]]
-category = "main"
-description = "Parallel optimisation for C++ / Python"
-name = "pygmo"
-optional = false
-python-versions = "*"
-version = "2.13.0"
-
-[package.dependencies]
-cloudpickle = "*"
-numpy = "*"
-
-[[package]]
 category = "dev"
 description = "python code static checker"
 name = "pylint"
@@ -473,7 +453,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 version = "1.2.0"
 
 [metadata]
-content-hash = "9714c397b282d2554844683ea78ea079c024b995888414e811ae62073165a354"
+content-hash = "23ee656b2af658fe0d64666ad5a2a6ac06e6c30278c96d4a3f7ed20ee2ffa40e"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -525,10 +505,6 @@ brotli = [
 click = [
     {file = "click-7.1.2-py2.py3-none-any.whl", hash = "sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc"},
     {file = "click-7.1.2.tar.gz", hash = "sha256:d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a"},
-]
-cloudpickle = [
-    {file = "cloudpickle-1.6.0-py3-none-any.whl", hash = "sha256:3a32d0eb0bc6f4d0c57fbc4f3e3780f7a81e6fee0fa935072884d58ae8e1cc7c"},
-    {file = "cloudpickle-1.6.0.tar.gz", hash = "sha256:9bc994f9e9447593bd0a45371f0e7ac7333710fcf64a4eb9834bf149f4ef2f32"},
 ]
 colorama = [
     {file = "colorama-0.4.3-py2.py3-none-any.whl", hash = "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff"},
@@ -698,12 +674,6 @@ pathspec = [
 plotly = [
     {file = "plotly-4.10.0-py2.py3-none-any.whl", hash = "sha256:752f0803588b8d895d604c58fa55119ad104f3fbdd5eb5f7d11a3079680c31c0"},
     {file = "plotly-4.10.0.tar.gz", hash = "sha256:aa1602346ffa17895687fc48ae58611f014ed7a5da4b07e79c2ca99d6d4dca31"},
-]
-pygmo = [
-    {file = "pygmo-2.13.0-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:892cef5ecf246493e2df7ce71d082dbf5e0f2f751f7c4b647d24458b743681c6"},
-    {file = "pygmo-2.13.0-cp36-cp36m-win_amd64.whl", hash = "sha256:fdeaaf52c6c5699a796bc0589ed1b24e03adcd1224f82f6da05e6e08ed0d5b95"},
-    {file = "pygmo-2.13.0-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:b3bf14e10fcb277aa03ceb132e07628c3bbcfbdfda7f6a7c9d7a4e28a2fc3151"},
-    {file = "pygmo-2.13.0-cp37-cp37m-win_amd64.whl", hash = "sha256:ef9c94896e2d622defdf957962791342d1cb0ff834905a038a0b442cbe367962"},
 ]
 pylint = [
     {file = "pylint-2.6.0-py3-none-any.whl", hash = "sha256:bfe68f020f8a0fece830a22dd4d5dddb4ecc6137db04face4c3420a46a52239f"},

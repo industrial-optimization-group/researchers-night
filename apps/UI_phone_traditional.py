@@ -11,7 +11,8 @@ import plotly.express as ex
 import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
-from pygmo import fast_non_dominated_sorting as nds
+
+# from pygmo import fast_non_dominated_sorting as nds
 from sklearn import preprocessing
 
 
@@ -31,7 +32,7 @@ details_on_card = details.columns[details_on_card == 1]
 
 sort_columns = details.columns[maxi != 0]
 sort_data = data[sort_columns].values * maxi[sort_columns].values
-front = data.loc[nds(sort_data)[0][0]].reset_index(drop=True)
+front = data
 
 numeric_cols = [
     attr
