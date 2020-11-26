@@ -14,6 +14,7 @@ import numpy as np
 from pygmo import fast_non_dominated_sorting as nds
 from sklearn import preprocessing
 
+from app import app
 
 data = pd.read_csv("./data/Phone_dataset_new.csv", header=0)
 details = pd.read_csv("./data/Phone_details.csv", header=0)
@@ -42,9 +43,9 @@ numeric_cols = [
 other_cols = [attr for attr in data if data.dtypes[attr] == "object"]
 
 
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LITERA])
+# app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LITERA])
 
-app.layout = html.Div(
+layout = html.Div(
     children=[
         # .container class is fixed, .container.scalable is scalable
         dbc.Row(

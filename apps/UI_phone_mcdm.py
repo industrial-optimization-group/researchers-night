@@ -11,6 +11,8 @@ import plotly.graph_objects as go
 import pandas as pd
 import numpy as np
 
+from app import app
+
 
 data = pd.read_csv("./data/Phone_dataset_new.csv", header=0)
 details = pd.read_csv("./data/Phone_details.csv", header=0)
@@ -38,15 +40,17 @@ fitness_data = data[fitness_columns] * maxi[fitness_columns].values
 
 external_stylesheets = ["https://codepen.io/chriddyp/pen/bWLwgP.css"]
 
+'''
 app = dash.Dash(
     __name__,
     external_stylesheets=[dbc.themes.LITERA],
     eager_loading=True,
     suppress_callback_exceptions=True,
 )
+'''
 
 
-app.layout = html.Div(
+layout = html.Div(
     children=[
         # .container class is fixed, .container.scalable is scalable
         dbc.Row(
