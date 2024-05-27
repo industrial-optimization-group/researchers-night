@@ -221,7 +221,9 @@ def results(*choices):
     distance_order = np.argsort(distance)
     tmp = card_data.loc[distance_order.values[0]]
     print(f"{tmp=}")
-    best = table_from_data(card_data.loc[distance_order.values[0]], choices)
+    best = table_from_data(
+        card_data.loc[distance_order.values[0]], (*choices, "Node combo")
+    )
     total_number = len(distance_order)
     if total_number >= 4:
         others, tooltips = other_options(card_data.loc[distance_order.values[1:5]])
@@ -238,8 +240,8 @@ def table_from_data(data, choices):
     # print(choices)
     to_compare = ["Cover", "Efficiency", "Activation"]
     # print(data[to_compare].values)
-    diff = (data[to_compare].values - choices) * [1, 1, 1]
-    colors = ["green" if x >= 0 else "red" for x in diff]
+    diff = (data[to_compare].values - choices[0:3]) * [1, 1, 1]
+    colors = ["green" if x >= 0 else "red" for x in diff] + [None]
     # print(np.sign(diff))
     return dbc.Table(
         [
@@ -266,7 +268,6 @@ def table_from_data(data, choices):
                         ]
                     )
                     for (col, c) in zip(data.index, colors)
-                    if col != "Node combo"
                 ]
             )
         ]
